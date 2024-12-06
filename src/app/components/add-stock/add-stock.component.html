@@ -1,0 +1,34 @@
+<div class="container">
+  <h2 class="page-title">Add Stock</h2>
+
+  <!-- Display error message -->
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <form (ngSubmit)="addStock()">
+    <div class="form-group">
+      <label for="symbol">Symbol:</label>
+      <input
+        type="text"
+        id="symbol"
+        class="form-control"
+        [(ngModel)]="stock.symbol"
+        name="symbol"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity:</label>
+      <input
+        type="number"
+        id="quantity"
+        class="form-control"
+        [(ngModel)]="stock.quantity"
+        name="quantity"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Add Stock</button>
+  </form>
+</div>

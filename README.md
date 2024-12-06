@@ -1,59 +1,72 @@
-# StockPortfolioFrontend
+# Stock Portfolio Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+This is the frontend application for the Stock Portfolio Manager built using Angular. The application allows users to manage their stock portfolio, add stocks, view their portfolio, and delete stocks.
 
-## Development server
+## Table of Contents
 
-To start a local development server, run:
+1. [Prerequisites](#prerequisites)
+2. [Setup](#setup)
+3. [Running Tests](#running-tests)
+4. [Building the Application](#building-the-application)
+5. [Running the Application](#running-the-application)
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Prerequisites
 
-## Code scaffolding
+Before running the application, ensure you have the following installed:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Node.js** (v18 or higher)
+  - Download and install from [Node.js Official Site](https://nodejs.org/).
+- **Angular CLI** (v15 or higher)
+  - Install globally using:
+    ```bash
+    npm install -g @angular/cli
+    ```
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Setup
 
-```bash
-ng generate --help
-```
+1. Clone the repository or download the project files.
+   ```bash
+   git clone https://github.com/your-repo-name.git
+   cd stock-portfolio-frontend
+   npm install
 
-## Building
+---
+## Running Tests
 
-To build the project run:
+To run the unit tests for the application:
 
-```bash
-ng build
-```
+1. Execute the following command:
+   ```bash
+   ng test
+   
+2. A browser window will open, showing the test results.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## Building the Application
+To build the application for production:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. Run the following command:
+   ```bash
+   ng build --configuration production
 
-```bash
-ng test
-```
+2. The production-ready files will be generated in the dist/ directory.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## Running the Application
+To run the application locally:
 
-```bash
-ng e2e
-```
+1. Start the Angular development server:
+   ```bash
+   ng serve
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+2. Open your browser and navigate to:
+   ```bash
+   http://localhost:4200
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. You should see the Stock Portfolio Manager landing page.

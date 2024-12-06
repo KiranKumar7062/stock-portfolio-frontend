@@ -1,0 +1,29 @@
+<div class="container">
+  <h2 class="page-title">Stock Portfolio</h2>
+  <h4>Total Portfolio Value: ${{ portfolioValue }}</h4>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Symbol</th>
+      <th>Quantity</th>
+      <th>Current Price</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let stock of stocks">
+      <td>{{ stock.id }}</td>
+      <td>{{ stock.symbol }}</td>
+      <td>{{ stock.quantity }}</td>
+      <td>{{ stock.currentPrice }}</td>
+      <td>
+        <button (click)="deleteStock(stock.id)" class="btn btn-danger">
+          Delete
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
