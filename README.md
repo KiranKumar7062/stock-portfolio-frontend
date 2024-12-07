@@ -30,7 +30,7 @@ Before running the application, ensure you have the following installed:
 
 1. Clone the repository or download the project files.
    ```bash
-   git clone https://github.com/your-repo-name.git
+   git clone https://github.com/KiranKumar7062/stock-portfolio-frontend.git
    cd stock-portfolio-frontend
    npm install
 
